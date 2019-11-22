@@ -1,0 +1,87 @@
+1.
+Method Name :- get()
+Syntax: get(url)
+Example: driver.get();
+Purpose: It will load a new web page in the current browser window. This is done using an http get operation, and the method will block until the load is complete.
+Parameters: URL - The URL to load and it should be a fully qualified URL
+Returns : object
+
+2.
+Method Name: getCurrentUrl()
+Syntax: getCurrentUrl()
+Example: driver.getCurrentUrl();
+Purpose: Gets a string representing the current URL that the browser is opened.
+Returns: The URL of the page currently loaded in the browser
+
+3.
+Method Name: getTitle()
+Syntax: getTitle()
+Example: driver.getTitle();
+Purpose: Gets the title of the current web page.
+Returns: The title of the current page, with leading and trailing white space stripped, or null if one is not already set
+
+
+
+
+
+4.
+Method Name: close()
+
+Syntax: void close()
+Example: driver.close();
+Purpose: Close the current window, if there are multiple windows, it will close the current window which is active and quits the browser if it's the last window opened currently.
+Return type: void
+
+
+5.
+Method Name: quit()
+Syntax: void quit()
+Example: driver.quit();
+Purpose: Quits this driver instance, closing every associated window which is opened.
+Return type: void
+
+
+6.
+Method Name: getWindowHandles()
+Syntax: Set getWindowHandles()
+Example: driver.getWindowHandles();
+Purpose: Return a set of window handles which can be used to iterate over all the open windows of this Webdriver instance by passing them to switchTo().WebDriver.Options.window()
+Returns: A set of window handles which can be used to iterate over all the open windows.
+
+
+7.
+Method Name: getWindowHandle()
+Syntax: String getWindowHandle()
+Example: driver.getWindowHandle();
+Parameter: Return an opaque handle to this window that uniquely identifies it within this driver instance. This can be used to switch to this window at a later date
+switchTo
+WebDriver.TargetLocator switchTo()
+The next future commands will be performed to a different frame or window.
+Returns: A Target Locator which can be used to switch or select a frame or window
+
+8.
+Method Name: navigate()
+Syntax: WebDriver.Navigation navigate()
+Example: driver.navigate.to("");
+Purpose: An abstraction allowing the driver to access the browser's history and to navigate to a given URL.
+Returns: A WebDriver.Navigation that allows the selection of what to do next
+
+
+
+9.
+Method Name: manage()
+Syntax: WebDriver.Options manage()
+Purpose: Gets the Option interface
+Returns: An option interface
+
+10.
+Method name: findElement()
+purpose : find web elements in the web page
+Returns: WebElement
+Argument:By class 
+
+11.
+Method name: findElements()
+purpose: used to find web elements.
+Returns: List<WebElement>
+Argument:By class
