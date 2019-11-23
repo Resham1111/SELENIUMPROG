@@ -1,7 +1,4 @@
 package com.pac1;
-//google
-//print the suggestions
-//click the 3rd autosuggesstion
 
 import java.util.List;
 
@@ -11,7 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DemoGoog2 {
+public class DemoGoogleassignment2 {
+
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", ".\\software\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -23,9 +21,9 @@ public class DemoGoog2 {
 		//Thread.sleep(3000);
 		WebElement name=driver.findElement(By.xpath("//input[@class='gLFyf gsfi']"));
 		Thread.sleep(2000);
-		name.sendKeys("java");
+		name.sendKeys("java",Keys.ENTER);
 		Thread.sleep(2000);
-		List<WebElement> name1=driver.findElements(By.xpath("//ul[@class=\"erkvQe\"]/li"));
+		List<WebElement> name1=driver.findElements(By.xpath("//h3[@class=\"LC20lb\"]"));
 		Thread.sleep(2000);
 		for(WebElement n: name1)
 		{
